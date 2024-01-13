@@ -1,0 +1,16 @@
+﻿@model FinanceTrackerWebApp.ViewModels.FinancialSummaryViewModel
+@{
+    ViewData["Title"] = "Financial Summary";
+}
+<link rel="stylesheet" href="~/css/site.css" />
+
+<div class="financial-summary">
+    <h1>Your Financial Summary</h1>
+    <hr/>
+    <h4>You Have: <span style="color: green;">$@Model.TotalBankAccountBalance</span></h4>
+    <h4>Available Credit: <span style="color: green;">$@Model.TotalAvailableCredit</span></h4>
+    <hr/>
+    <h4>Credit Card Debt: <span style="color: red;">$@Model.TotalCreditCardDebt</span></h4>
+    <hr/>
+    <h4>Net Worth: <span style="color: blue;">$@Model.NetWorth</span></h4>
+</div>
