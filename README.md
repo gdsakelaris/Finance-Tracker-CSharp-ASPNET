@@ -1,2 +1,3 @@
-﻿# CSharp-ASPNET-FinanceManager
+# CSharp-ASPNET-FinanceManager
 Track your finances.
+
