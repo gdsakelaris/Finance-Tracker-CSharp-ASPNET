@@ -54,7 +54,7 @@ namespace FinanceTrackerWebApp.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("CardId,CustomCardName,CurrentBalance,CreditLimit")] CreditCard creditCard)
+        public async Task<IActionResult> Create([Bind("CardId,CustomCardName,TotalBalance,CreditLimit")] CreditCard creditCard)
         {
             if (ModelState.IsValid)
             {
@@ -86,7 +86,7 @@ namespace FinanceTrackerWebApp.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("CardId,CustomCardName,CurrentBalance,CreditLimit")] CreditCard creditCard)
+        public async Task<IActionResult> Edit(int id, [Bind("CardId,CustomCardName,TotalBalance,CreditLimit")] CreditCard creditCard)
         {
             if (id != creditCard.CardId)
             {

@@ -6,7 +6,7 @@
 
 <h1>Edit</h1>
 
-<h4>CreditCard</h4>
+<h4>Credit Card</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
@@ -19,9 +19,24 @@
                 <span asp-validation-for="CustomCardName" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="CurrentBalance" class="control-label"></label>
-                <input asp-for="CurrentBalance" class="form-control" />
-                <span asp-validation-for="CurrentBalance" class="text-danger"></span>
+                <label asp-for="TotalBalance" class="control-label"></label>
+                <input asp-for="TotalBalance" class="form-control" />
+                <span asp-validation-for="TotalBalance" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="StatementBalance" class="control-label"></label>
+                <input asp-for="StatementBalance" class="form-control" />
+                <span asp-validation-for="StatementBalance" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NextPaymentDueDateTime" class="control-label"></label>
+                <input asp-for="NextPaymentDueDateTime" class="form-control" type="datetime-local" />
+                <span asp-validation-for="NextPaymentDueDateTime" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CardManagementUrl" class="control-label"></label>
+                <input asp-for="CardManagementUrl" class="form-control" />
+                <span asp-validation-for="CardManagementUrl" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="CreditLimit" class="control-label"></label>

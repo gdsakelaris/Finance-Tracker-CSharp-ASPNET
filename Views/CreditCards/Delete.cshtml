@@ -18,10 +18,28 @@
             @Html.DisplayFor(model => model.CustomCardName)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.CurrentBalance)
+            @Html.DisplayNameFor(model => model.TotalBalance)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.CurrentBalance)
+            @Html.DisplayFor(model => model.TotalBalance)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.StatementBalance)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.StatementBalance)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.NextPaymentDueDateTime)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.NextPaymentDueDateTime)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CardManagementUrl)
+        </dt>
+        <dd class="col-sm-10">
+            <a href="@Model.CardManagementUrl" target="_blank">@Model.CardManagementUrl</a>
         </dd>
         <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.CreditLimit)

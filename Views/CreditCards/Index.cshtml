@@ -17,12 +17,20 @@
                 @Html.DisplayNameFor(model => model.CustomCardName)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.CurrentBalance)
+                @Html.DisplayNameFor(model => model.TotalBalance)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.StatementBalance)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NextPaymentDueDateTime)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CardManagementUrl)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.CreditLimit)
             </th>
-            <th></th>
         </tr>
     </thead>
     <tbody>
@@ -32,7 +40,16 @@
                 @Html.DisplayFor(modelItem => item.CustomCardName)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.CurrentBalance)
+                @Html.DisplayFor(modelItem => item.TotalBalance)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.StatementBalance)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NextPaymentDueDateTime)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CardManagementUrl)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.CreditLimit)

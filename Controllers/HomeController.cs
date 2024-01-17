@@ -19,8 +19,8 @@ namespace FinanceTrackerWebApp.Controllers
         {
             var viewModel = new ViewModels.FinancialSummaryViewModel
             {
-                TotalCreditCardDebt = _context.CreditCards.Sum(c => c.CurrentBalance),
-                TotalAvailableCredit = _context.CreditCards.Sum(c => c.CreditLimit - c.CurrentBalance),
+                TotalCreditCardDebt = _context.CreditCards.Sum(c => c.TotalBalance),
+                TotalAvailableCredit = _context.CreditCards.Sum(c => c.CreditLimit - c.TotalBalance),
                 TotalBankAccountBalance = _context.BankAccounts.Sum(b => b.Balance),
             };
 
